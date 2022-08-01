@@ -1,0 +1,5 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+    padding-left: 1195px;
+}

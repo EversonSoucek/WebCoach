@@ -1,0 +1,7 @@
+.perfil-form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 190px;
+    padding-left: 97px;
+}

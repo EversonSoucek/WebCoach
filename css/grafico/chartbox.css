@@ -1,0 +1,7 @@
+.kcalnecessario {
+    display: flex;
+    font-family:'Inter', sans-serif; 
+    font-weight: 500;
+    justify-content: space-around;
+    padding-top: 20px;
+}

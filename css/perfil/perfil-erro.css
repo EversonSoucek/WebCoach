@@ -1,0 +1,9 @@
+.perfil-erro {
+    font-weight: bold;
+    color: rgb(245, 78, 78);
+    padding-bottom: 0,5rem;
+}
+
+.esconder{
+    display: none;
+}

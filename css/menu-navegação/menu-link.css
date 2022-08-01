@@ -1,0 +1,8 @@
+.menu-link {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-link:hover {
+    color: #ecffe9;
+}

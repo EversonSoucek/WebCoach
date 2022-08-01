@@ -1,0 +1,4 @@
+.perfil {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Você</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"
+        integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/cabecalho/cabecalho.css">
+    <link rel="stylesheet" href="/css/cabecalho/logo-cabecalho.css">
+    <link rel="stylesheet" href="/css/cabecalho/titulo-cabecalho.css">
+    <link rel="stylesheet" href="/css/extra/normalize.css">
+    <link rel="stylesheet" href="/css/extra/reset.css">
+    <link rel="stylesheet" href="/css/menu-navegação/menu.css">
+    <link rel="stylesheet" href="/css/menu-navegação/menu-lista.css">
+    <link rel="stylesheet" href="/css/menu-navegação/menu-item.css">
+    <link rel="stylesheet" href="/css/menu-navegação/menu-link.css">
+    <link rel="stylesheet" href="/css/perfil/perfil.css">
+    <link rel="stylesheet" href="/css/perfil/perfil-etiqueta.css">
+    <link rel="stylesheet" href="/css/perfil/perfil-titulo.css">
+    <link rel="stylesheet" href="/css/perfil/perfil-form.css">
+    <link rel="stylesheet" href="/css/perfil/perfil-input.css">
+    <link rel="stylesheet" href="/css/resultados/resultados.css">
+    <link rel="stylesheet" href="/css/resultados/resultado-detalhes_informacoes.css">
+    <link rel="stylesheet" href="/css/resultados/resultado-detalhes.css">
+    <link rel="stylesheet" href="/css/resultados/resultado-detalhes_nome.css">
+    <link rel="stylesheet" href="/css/resultados/resultado-titulo.css">
+    <link rel="stylesheet" href="/css/perfil/perfil-erro.css">
+    <link rel="stylesheet" href="/css/grafico/grafico.css">
+    <link rel="stylesheet" href="/css/grafico/chartbox.css">
+    <link rel="icon" type="'image/png" href="/images/healthy-food.png"></a>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="logo-cabecalho" src="/images/comida-saudavel.png" alt="Comidas saudaveis">
+        <h1 class="titulo-cabecalho">WebCoach</h1>
+        <nav class="menu">
+            <ul class="menu-lista">
+                <li class="menu-item"><a class="menu-link" href="./index.html">Você</a></li>
+                <li class="menu-item"><a class="menu-link" href="./alimentos.html">Alimentos</a></li>
+                <li class="menu-item"><a class="menu-link" href="./sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form class="perfil" id="form">
+        <h1 class="perfil-titulo">Perfil</h1>
+        <div class="perfil-form">
+            <div>
+                <span class="perfil-erro esconder" id="erro-altura">
+                    &#33; Altura invalida</span>
+                <label class="perfil-etiqueta" for="'altura">Altura</label>
+                <input class="perfil-input" type="number" name="altura" id="form-paciente" required value="1.93"><br>
+            </div>
+
+            <div>
+                <span class="perfil-erro esconder" id="erro-peso">
+                    &#33; Peso invalido</span>
+                <label class="perfil-etiqueta" for="peso">Peso</label>
+                <input class="perfil-input" type="number" placeholder="(kg) 70" name="peso" id="form-paciente" required
+                    value="77.45"><br>
+            </div>
+
+            <div>
+                <span class="perfil-erro esconder" id="erro-idade">
+                    &#33; Idade invalida</span>
+                <label class="perfil-etiqueta" for="idade">Idade</label>
+                <input class="perfil-input" type="number" name="idade" id="form-paciente" required value="18"><br>
+            </div>
+
+            <div>
+                <span class="perfil-erro esconder" id="erro-gordura">
+                    &#33; Gordura invalida</span>
+                <label class="perfil-etiqueta" for="gordura">Gordura</label>
+                <input class="perfil-input" type="number" name="gordura" id="form-paciente" required value="18"><br>
+            </div>
+
+            <div>
+                <label class="perfil-etiqueta" for="genero">Gênero</label>
+                <select class="perfil-input" name="genero" id="form-paciente" required>
+                    <option value="Homem">Homem</option>
+                    <option value="Mulher">Mulher</option>
+                </select><br>
+            </div>
+
+            <div>
+                <label class="perfil-etiqueta" for="atividade">Atividade</label>
+                <select class="perfil-input" name="atividade" id="form-paciente" required>
+                    <option value="baixo">Baixo</option>
+                    <option value="moderado" selected>Moderado</option>
+                    <option value="alto">Alto</option>
+                    <option value="muito-alto">Muito alto</option>
+                </select><br>
+            </div>
+
+            <div>
+                <label class="perfil-etiqueta" for="objetivo">Objetivo</label>
+                <select class="perfil-input" name='objetivo' id="form-paciente" required>
+                    <option value="perder-peso">Perder peso</option>
+                    <option value="manter-peso" selected>Manter peso</option>
+                    <option value="ganhar-peso">Ganhar peso</option>
+                </select><br>
+            </div>
+        </div>
+    </form>
+    <table>
+        <tbody class="resultados">
+            <h1 class="resultado-titulo">Resultado</h1>
+            <tr class="resultados-detalhes">
+                <td class="resultados-detalhes_nome">Metabolica Basal</td>
+                <td class="resultados-detalhes_informacoes" id="informacao-basal"></td>
+            </tr>
+            <tr class="resultados-detalhes">
+                <td class="resultados-detalhes_nome">IMC</td>
+                <td class="resultados-detalhes_informacoes" id="informacao-imc"></td>
+            </tr>
+            <tr class="resultado-detalhes">
+                <td class="resultados-detalhes_nome">Requisitos de água</td>
+                <td class="resultados-detalhes_informacoes" id="informacao-agua"></td>
+            </tr>
+        </tbody>
+    </table>
+    <h1 class="kcalnecessario" id="kcalnecessario"></h1>
+    <div class="chartbox">
+        <canvas class="grafico" id="grafico">
+        </canvas>
+    </div>
+</body>
+
+<head>
+    <script type="module" src="./js/main.js"></script>
+</head>
+
+</html>

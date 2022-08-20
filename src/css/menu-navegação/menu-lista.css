@@ -1,0 +1,5 @@
+.menu-lista {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}

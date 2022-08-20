@@ -1,0 +1,7 @@
+.chartbox {
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    padding-left: 750px;
+    padding-top: 20px;
+}

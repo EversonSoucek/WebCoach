@@ -1,6 +1,6 @@
 import React from 'react'
 import logoImagem from './logoImagem.png'
-import styles from './Logo.module.css'
+import styles from './Logo.module.scss'
 
 export default function Logo({ tamanhoFonte = '25px', altura = '32px', largura = '39px' }) {
     return (

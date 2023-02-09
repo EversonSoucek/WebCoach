@@ -4,7 +4,7 @@
 
 Web Coach é uma ferramenta feito em react para ajudar vc a manter e cuidar do seus treinos e dieta.
 
-este projeto está sendo seguido do protótipo <a href="https://www.figma.com/file/XFY7dsx1zD2vXVNA1sfwss/WebCoach?node-id=0%3A1&t=sTSr4WU2PW1cgcF2-1"> figma </a>
+Este projeto está sendo seguido do protótipo <a href="https://www.figma.com/file/XFY7dsx1zD2vXVNA1sfwss/WebCoach?node-id=0%3A1&t=sTSr4WU2PW1cgcF2-1"> Figma </a>
 
 ## :hammer: funcionalidades do projeto
 

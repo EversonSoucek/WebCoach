@@ -1,0 +1,10 @@
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__atributo {
+        color: black;
+        font-size: smaller;
+    }
+
+}

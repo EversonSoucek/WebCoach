@@ -1,0 +1,37 @@
+@use '/src/styles/mixins';
+
+.secaoDieta {
+    @include mixins.Container;
+
+    &__imagem {
+        width: 256px;
+        height: 256px;
+        margin-left: 256px;
+    }
+
+    &__divisao {
+        color: white;
+    }
+
+    &__titulo {
+        margin-bottom: 35px;
+        margin-right: 362px;
+        font-weight: 700;
+        font-size: 40px;
+        width: 455px;
+
+    }
+
+    &__texto {
+        font-weight: 400;
+        font-size: 24px;
+        width: 450px;
+        margin-bottom: 60px;
+
+    }
+
+    &__botaoCallToAction {
+        @include mixins.BotaoCallToAction;
+        margin-top: 39px;
+    }
+}

@@ -1,0 +1,36 @@
+@use '/src/styles/mixins';
+
+
+.secaoTreino {
+    @include mixins.Container;
+
+    &__imagem {
+        margin-left: 200px;
+    }
+
+    ;
+
+    &__divisao {
+        color: white;
+    }
+
+    &__titulo {
+        font-weight: 700;
+        font-size: 40px;
+        width: 432px;
+        margin-left: 115px;
+        margin-bottom: 53px;
+    }
+
+    ;
+
+    &__texto {
+        font-weight: 400;
+        font-size: 25px;
+        width: 326px;
+        margin-left: 228px;
+    }
+
+
+
+}

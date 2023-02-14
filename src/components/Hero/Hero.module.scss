@@ -1,10 +1,8 @@
-@import '/src/styles/variaveis';
+@use '/src/styles/variaveis' as *;
+@use '/src/styles/mixins';
 
 .hero {
-    display: grid;
-    grid-template-columns: 50% 10%;
-    height: 100vh;
-    align-items: center;
+    @include mixins.Container
 }
 
 
@@ -25,31 +23,19 @@
     margin-bottom: 30px;
 }
 
-@mixin botao ($cor, $corBorda: none) {
-    border: solid 1px;
-    padding: 18px;
-    border-radius: 82px;
-    border-color: $corBorda;
-    background-color: $cor;
-    color: white;
-    width: 100px;
-    text-align: center;
-    font-weight: 700;
-}
-
 .hero__botoes {
     display: flex;
     justify-content: center;
 }
 
 .hero__botaoCallToAction {
-    @include botao($roxo-chamativo);
+    @include mixins.BotaoCallToAction;
     margin-left: 100px;
-    border: none
 }
 
+
 .hero__botaoVerMais {
-    @include botao($verde-principal, $marrom-segundo );
+    @include mixins.Botao($verde-principal, $marrom-segundo );
     margin-left: 16px;
 }
 

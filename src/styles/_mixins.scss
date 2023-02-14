@@ -1,0 +1,25 @@
+@use '/src/styles/variaveis' as *;
+
+@mixin Container {
+    display: grid;
+    grid-template-columns: 50% 10%;
+    height: 100vh;
+    align-items: center;
+}
+
+@mixin Botao ($cor, $corBorda: none) {
+    border: solid 1px;
+    padding: 18px;
+    border-radius: 82px;
+    border-color: $corBorda;
+    background-color: $cor;
+    color: white;
+    width: 100px;
+    text-align: center;
+    font-weight: 700;
+}
+
+@mixin BotaoCallToAction {
+    @include Botao($roxo-chamativo);
+    border: none
+}

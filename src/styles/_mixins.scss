@@ -21,5 +21,44 @@
 
 @mixin BotaoCallToAction {
     @include Botao($roxo-chamativo);
-    border: none
+    border: none;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+@mixin Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border: solid 1.5px $marrom-segundo ;
+    background-color: white;
+    height: 436px;
+    width: 970px;
+
+    &__input {
+        height: 44px;
+        width: 289px;
+    }
+
+    &__botaoCallToAction {
+        @include BotaoCallToAction;
+    }
+
+    &__titulo {
+        color: $verde-principal;
+        margin-bottom: 20px;
+    }
+}
+
+@mixin PaginaForm {
+    background-color: $verde-principal;
+    height: 100vh
 }

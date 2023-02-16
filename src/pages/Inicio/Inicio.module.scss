@@ -1,4 +1,4 @@
-@import '/src/styles/variaveis';
+@use '/src/styles/variaveis' as *;
 
 .inicio {
     background-color: $verde-principal;

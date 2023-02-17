@@ -1,15 +1,13 @@
 import Inicio from "./pages/Inicio/Index";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import FormularioGenero from "pages/FormulariosSelect/FormularioGenero";
-import FormularioIdade from "pages/FormulariosInput/FormularioIdade";
+import Formulario from "./pages/Formulario/index";
 
 function AppRoutes() {
 	return (
 		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<Inicio />} />
-				<Route path="/formulario-genero" element={<FormularioGenero />} />
-				<Route path="/formulario-idade" element={<FormularioIdade />} />
+				<Route path="/form" element={<Formulario/>} />
 			</Routes>
 
 		</BrowserRouter>

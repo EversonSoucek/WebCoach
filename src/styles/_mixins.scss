@@ -7,58 +7,25 @@
     align-items: center;
 }
 
-@mixin Botao ($cor, $corBorda: none) {
+@mixin Botao ($cor, $corBorda: none, $espacamento: false) {
+    @if $espacamento {
+        padding: 18px;
+    }
+
     border: solid 1px;
-    padding: 18px;
     border-radius: 82px;
     border-color: $corBorda;
     background-color: $cor;
     color: white;
-    width: 100px;
     text-align: center;
     font-weight: 700;
 }
 
 @mixin BotaoCallToAction {
-    @include Botao($roxo-chamativo);
+    @include Botao($roxo-chamativo,none,true);
     border: none;
 
     &:hover {
         transform: scale(1.1);
     }
-}
-
-@mixin Form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    border: solid 1.5px $marrom-segundo ;
-    background-color: white;
-    height: 436px;
-    width: 970px;
-
-    &__input {
-        height: 44px;
-        width: 289px;
-    }
-
-    &__botaoCallToAction {
-        @include BotaoCallToAction;
-    }
-
-    &__titulo {
-        color: $verde-principal;
-        margin-bottom: 20px;
-    }
-}
-
-@mixin PaginaForm {
-    background-color: $verde-principal;
-    height: 100vh
 }

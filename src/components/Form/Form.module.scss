@@ -1,9 +1,0 @@
-@use '/src/styles/mixins' as *;
-
-.form {
-    @include Form;
-
-    &__botaoCallToAction {
-        margin: 10px;
-    }
-}

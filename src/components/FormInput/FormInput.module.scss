@@ -10,10 +10,15 @@
     }
 
     &__input {
+        box-shadow: none;
+        border-style: solid;
+        border-color: $marrom-segundo;
         height: 44px;
         width: 289px;
         margin-bottom: 27.91px;
-        border-color: $marrom-segundo;
-        box-shadow: none !important;
+    }
+
+    ::placeholder {
+        margin-left: 3px;
     }
 }

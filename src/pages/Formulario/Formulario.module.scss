@@ -4,6 +4,47 @@
     background-color: $verde-principal;
     height: 100vh;
 
+    &__barraDeProgresso {
+        border: solid 1px black;
+        box-shadow: 0 -1px 5px -1px #000;
+        display: flex;
+        margin: 0 auto;
+        width: 780px;
+        height: 20px;
+        background-color: white;
+        margin-left: 569px;
+        margin-top: 114px;
+        margin-bottom: 500px;
+        position: relative;
+
+        &__progresso {
+            position: absolute;
+            height: 50px;
+            width: 130px;
+            background-color: $marrom-segundo;
+            transition: 1s;
+            &::after{
+                content: '';
+                height: 0;
+                width: 0;
+                border-top: 10px solid transparent;
+                border-bottom: 10px solid transparent;
+                position: absolute;
+                right: -20px;
+                top: 0;
+                border-left: 20px solid $marrom-segundo;
+            }
+        }
+
+        &__coluna {
+            width: 130px;
+            font-size: small;
+            text-align: center;
+            position: relative;
+        }
+
+    }
+
     &__caixa {
         display: flex;
         position: absolute;
@@ -24,5 +65,18 @@
         @include Botao($roxo-chamativo);
         width: 84px;
         height: 27px;
+        margin: 10px;
     }
+
+    &__botao:hover {
+        transform: scale(1.1);
+    }
+
+    &__botao:disabled {
+        color: black;
+        background-color: white;
+        transform: scale(0.9);
+    }
+
+
 }

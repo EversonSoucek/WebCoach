@@ -10,7 +10,7 @@ export default function SecaoDieta() {
             <div className={styles.secaoDieta__divisao}>
                 <h2 className={styles.secaoDieta__titulo}>Calculadora de macros</h2>
                 <p className={styles.secaoDieta__texto}>Uma calculadora de macros completa com adição de aliementos e manutenção de dieta</p>
-                <Link className={styles.secaoDieta__botaoCallToAction} to='/formularioidade'>Comece já</Link>
+                <Link className={styles.secaoDieta__botaoCallToAction} to='/form'>Comece já</Link>
             </div>
 
         </section>

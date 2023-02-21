@@ -52,12 +52,12 @@ export default function Formulario() {
 									passo === 4 ? '630px' :
 										'756px'
 				}}></div>
-				<div className={styles.formulario__barraDeProgresso__coluna}>Passo 1</div>
-				<div className={styles.formulario__barraDeProgresso__coluna}>Passo 2</div>
-				<div className={styles.formulario__barraDeProgresso__coluna}>Passo 3</div>
-				<div className={styles.formulario__barraDeProgresso__coluna}>Passo 4</div>
-				<div className={styles.formulario__barraDeProgresso__coluna}>Passo 5</div>
-				<div className={styles.formulario__barraDeProgresso__coluna}>Passo 6</div>
+				<div className={styles.formulario__barraDeProgresso__coluna} style={{ color: 'white' }}>Passo 1</div>
+				<div className={styles.formulario__barraDeProgresso__coluna} style={{ color: passo >= 1 ? 'white' : 'black' }}>Passo 2</div>
+				<div className={styles.formulario__barraDeProgresso__coluna} style={{ color: passo >= 2 ? 'white' : 'black' }}>Passo 3</div>
+				<div className={styles.formulario__barraDeProgresso__coluna} style={{ color: passo >= 3 ? 'white' : 'black' }}>Passo 4</div>
+				<div className={styles.formulario__barraDeProgresso__coluna} style={{ color: passo >= 4 ? 'white' : 'black' }}>Passo 5</div>
+				<div className={styles.formulario__barraDeProgresso__coluna} style={{ color: passo >= 5 ? 'white' : 'black' }}>Passo 6</div>
 			</div>
 			<div className={styles.formulario__caixa}>
 				<div className={styles.formulario__conteudo}>{passoDisplay()}</div>

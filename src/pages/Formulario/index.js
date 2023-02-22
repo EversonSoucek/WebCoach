@@ -1,7 +1,9 @@
 import CabecalhoInicio from 'components/CabecalhoInicio'
+import Footer from 'components/Footer'
 import FormInput from 'components/FormInput'
 import FormSelect from 'components/FormSelect'
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import styles from './Formulario.module.scss'
 
 
@@ -63,7 +65,15 @@ export default function Formulario() {
 				<div className={styles.formulario__conteudo}>{passoDisplay()}</div>
 				<div className={styles.formulario__botoes}>
 					<button className={styles.formulario__botao} disabled={passo === 0} onClick={() => { setPasso(passo - 1) }}>Voltar</button>
-					<button className={styles.formulario__botao} disabled={passo === 5} onClick={() => { setPasso(passo + 1) }}>Avançar</button>
+					<button className={styles.formulario__botao}
+						disabled={passo === 5}
+						onClick={() => { setPasso(passo + 1) }}
+						style={{ display: passo === 5 ? 'none' : '' }}>Avançar</button>
+					<button
+						onClick={console.log('oi')}
+						type='submit' className={styles.formulario__botao__avancar}
+						style={{ display: passo === 5 ? '' : 'none' }}>
+						<Link to='/usuario'>Enviar</Link></button>
 				</div>
 			</div>
 		</div>

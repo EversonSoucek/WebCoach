@@ -1,0 +1,9 @@
+@use '/src/styles/index.scss' as *;
+
+.CabecalhoPrincipal {
+    background-color: $verde-principal;
+    display: flex;
+    height: 120px;
+    align-items: center;
+    justify-content: space-between;
+}

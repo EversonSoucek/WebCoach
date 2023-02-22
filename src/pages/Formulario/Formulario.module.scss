@@ -69,8 +69,12 @@
         width: 84px;
         height: 27px;
         margin: 10px;
-    }
 
+        &__avancar {
+            @include BotaoCallToAction;
+            padding: 3px 20px;
+        }
+    }
     &__botao:hover {
         transform: scale(1.1);
     }
@@ -80,6 +84,6 @@
         background-color: white;
         transform: scale(0.9);
     }
-
+ 
 
 }

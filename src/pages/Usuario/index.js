@@ -1,4 +1,3 @@
-import CabecalhoPrincipal from 'components/CabecalhoPrincipal'
 import TituloSecao from 'components/TituloSecao'
 import UsuarioAltura from 'components/UsuarioForms/UsuarioAltura'
 import UsuarioAtividade from 'components/UsuarioForms/UsuarioAtividade'
@@ -11,7 +10,6 @@ import React from 'react'
 export default function Usuario() {
 	return (
 		<div>
-			<CabecalhoPrincipal />
 			<TituloSecao>Perfil</TituloSecao>
 			<UsuarioAltura />
 			<UsuarioPeso />

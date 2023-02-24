@@ -1,0 +1,13 @@
+@use '/src/styles/index.scss' as *;
+
+.tituloSecao {
+    border-bottom: solid 1px $verde-principal;
+    display: flex;
+    font-weight: 600;
+    font-size: 25px;
+    padding-bottom: 15px;
+    align-items: center;
+    margin-left: 235px;
+    margin-top: 62px;
+    width: 75%;
+}

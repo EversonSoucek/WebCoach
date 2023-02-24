@@ -1,40 +1,41 @@
 import CabecalhoInicio from 'components/CabecalhoInicio'
-import Footer from 'components/Footer'
-import FormInput from 'components/FormInput'
-import FormSelect from 'components/FormSelect'
+import FormAltura from 'components/Forms/FormAltura'
+import FormAtividade from 'components/Forms/FormAtividade'
+import FormGenero from 'components/Forms/FormGenero'
+import FormIdade from 'components/Forms/FormIdade'
+import FormObjetivo from 'components/Forms/FormObjetivo'
+import FormPeso from 'components/Forms/FormPeso'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import styles from './Formulario.module.scss'
 
-
 const forms = [{
 	id: 0,
-	conteudo: <FormSelect opcoes={['Homem', 'Mulher']} titulo='Gênero' />,
+	conteudo: <FormGenero />,
 },
 {
 	id: 1,
-	conteudo: <FormInput exemplo='ex: 22' titulo=' Idade' />
+	conteudo: <FormIdade />
 },
 {
 	id: 2,
-	conteudo: <FormInput titulo='Peso' exemplo=' kgs' />
+	conteudo: <FormPeso />
 },
 {
 	id: 3,
-	conteudo: <FormInput titulo='Altura' exemplo=' cm' />
+	conteudo: <FormAltura />
 },
 {
 	id: 4,
-	conteudo: <FormSelect titulo='Atividade' opcoes={['Baixo', 'Moderado', 'Alto', 'Muito Alto']} />
+	conteudo: <FormAtividade />
 },
 {
 	id: 5,
-	conteudo: <FormSelect titulo='Objetivo' opcoes={['Perder Peso', 'Manter Peso', 'Ganhar Peso']} />
+	conteudo: <FormObjetivo />
 }
 ]
 export default function Formulario() {
 	const [passo, setPasso] = useState(0)
-
 	function passoDisplay() {
 		for (let i = 0; i < forms.length; i++) {
 			if (passo === forms[i].id) {
@@ -70,7 +71,6 @@ export default function Formulario() {
 						onClick={() => { setPasso(passo + 1) }}
 						style={{ display: passo === 5 ? 'none' : '' }}>Avançar</button>
 					<button
-						onClick={console.log('oi')}
 						type='submit' className={styles.formulario__botao__avancar}
 						style={{ display: passo === 5 ? '' : 'none' }}>
 						<Link to='/usuario'>Enviar</Link></button>

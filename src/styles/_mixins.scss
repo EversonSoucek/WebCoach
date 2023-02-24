@@ -22,10 +22,50 @@
 }
 
 @mixin BotaoCallToAction {
-    @include Botao($roxo-chamativo,none,true);
+    @include Botao($roxo-chamativo, none, true);
     border: none;
 
     &:hover {
         transform: scale(1.1);
     }
+}
+
+@mixin FormUsuario () {
+    .usuario {
+        border-bottom: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 32px;
+        margin-left: 330px;
+        margin-top: 63px;
+        width: 70%;
+
+        &__titulo {
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        &__input {
+            border: 1px solid $marrom-segundo;
+            box-shadow: none;
+            width: 330px;
+            height: 30px;
+        }
+    }
+}
+
+@mixin FormInput {
+    box-shadow: none;
+    border-style: solid;
+    border-color: $marrom-segundo;
+    height: 44px;
+    width: 289px;
+    margin-bottom: 27.91px;
+}
+
+@mixin FormSelect {
+    border: solid 2px $marrom-segundo;
+    height: 44px;
+    width: 289px;
+    margin-bottom: 27.91px;
 }

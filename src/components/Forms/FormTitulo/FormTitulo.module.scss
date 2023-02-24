@@ -1,0 +1,9 @@
+@use '/src/styles/index.scss' as *;
+
+.formTitulo {
+    color: $verde-principal;
+    margin-bottom: 76px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}

@@ -1,0 +1,7 @@
+@use '/src/styles/index.scss' as *;
+
+.formAltura {
+    &__input {
+        @include FormInput
+    }
+}

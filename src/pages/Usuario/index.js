@@ -1,3 +1,4 @@
+import Resultado from 'components/Resultado'
 import TituloSecao from 'components/TituloSecao'
 import UsuarioAltura from 'components/UsuarioForms/UsuarioAltura'
 import UsuarioAtividade from 'components/UsuarioForms/UsuarioAtividade'
@@ -10,13 +11,19 @@ import React from 'react'
 export default function Usuario() {
 	return (
 		<div>
-			<TituloSecao>Perfil</TituloSecao>
-			<UsuarioAltura />
-			<UsuarioPeso />
-			<UsuarioIdade />
-			<UsuarioGenero />
-			<UsuarioAtividade />
-			<UsuarioObjetivo />
+			<div>
+				<TituloSecao>Perfil</TituloSecao>
+				<UsuarioAltura />
+				<UsuarioPeso />
+				<UsuarioIdade />
+				<UsuarioGenero />
+				<UsuarioAtividade />
+				<UsuarioObjetivo />
+			</div>
+			<div>
+				<TituloSecao>Resultado</TituloSecao>
+				<Resultado/>
+			</div>
 		</div>
 	)
 }

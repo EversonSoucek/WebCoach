@@ -1,5 +1,5 @@
-import MenuLink from 'components/MenuLink'
 import React from 'react'
+import MenuLink from '../MenuLink'
 import styles from './Menu.module.scss'
 
 export default function Menu() {

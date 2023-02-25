@@ -1,5 +1,5 @@
 import Logo from 'components/Logo'
-import Menu from 'components/Menu'
+import Menu from 'components/Menus/Menu'
 import React from 'react'
 import styles from './CabecalhoPrincipal.module.scss'
 

@@ -1,6 +1,6 @@
+import GraficoPizza from 'components/GraficoPizza'
 import { UsuarioContext } from 'contexts/Usuario'
 import React, { useContext } from 'react'
-import { PieChart } from 'react-minimal-pie-chart'
 import styles from './Resultado.module.scss'
 
 export default function Resultado() {
@@ -45,7 +45,12 @@ export default function Resultado() {
                 </ul>
             </div>
             <div className={styles.resultado__grafico}>
-                oi
+                <ul className={styles.resultado__grafico__macros}>
+                    <li className={styles.resultado__grafico__macros__item}>Proteína:{proteina}</li>
+                    <li className={styles.resultado__grafico__macros__item}>Carboidrato:{carboidrato}</li>
+                    <li className={styles.resultado__grafico__macros__item}>Gordura:{gordura}</li>
+                </ul>
+                <GraficoPizza className={styles.resultado__grafico__pizza} proteina={proteina} carboidrato={carboidrato} gordura={gordura} />
             </div>
         </div>
 

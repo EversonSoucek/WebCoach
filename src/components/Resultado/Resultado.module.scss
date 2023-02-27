@@ -15,4 +15,39 @@
         }
     }
 
+    &__grafico {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 40px;
+        margin-left: 300px;
+
+        &__macros {
+            display: flex;
+
+            &__item {
+                font-weight: 600;
+                font-size: 14px;
+                margin-left: 10px;
+
+                &:last-child {
+                    color: #F5EF03;
+                }
+
+                &:first-child {
+                    color: #3E0AF5;
+                }
+
+                &:first-child+li {
+                    color: #A80E00;
+                }
+            }
+        }
+
+        &__pizza {
+            margin-top: 64px;
+        }
+
+    }
+
 }

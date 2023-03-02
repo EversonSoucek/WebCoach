@@ -9,6 +9,10 @@ export default function UsuarioProvider({ children }) {
     const [idade, setIdade] = useState(0)
     const [atividade, setAtividade] = useState('')
     const [objetivo, setObjetivo] = useState('')
+    const [proteina, setProteina] = useState(0)
+    const [carboidrato, setCarboidrato] = useState(0)
+    const [gordura, setGordura] = useState(0)
+    const [kcalNecessaria, setKcalNecessaria] = useState(0)
 
     return (
         <UsuarioContext.Provider
@@ -24,7 +28,16 @@ export default function UsuarioProvider({ children }) {
                 atividade,
                 setAtividade,
                 objetivo,
-                setObjetivo
+                setObjetivo,
+                proteina,
+                setProteina,
+                carboidrato,
+                setCarboidrato,
+                gordura,
+                setGordura,
+                kcalNecessaria,
+                setKcalNecessaria
+
             }}>
             {children}
         </UsuarioContext.Provider>

@@ -1,0 +1,85 @@
+@use '/src/styles/index.scss' as *;
+
+.refeicao {
+    &__adicionada {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 70%;
+        margin-left: 300px;
+        margin-top: 36px;
+        padding-bottom: 27px;
+
+        &__secao {
+            display: flex;
+            border-bottom: solid 1px black;
+            margin-right: 90px;
+            margin-bottom: 50px;
+            width: 95%;
+            justify-content: space-around;
+
+            &__item {
+                font-weight: 600;
+                font-size: 15px;
+            }
+
+            &__macros {
+                display: flex;
+                font-weight: 600;
+                font-size: 15px;
+
+                &__proteina {
+                    color: $azul_proteina ;
+                    margin-right: 87px;
+                }
+
+                &__gordura {
+                    color: $amarelo-gordura;
+                    margin-right: 87px;
+                }
+
+                &__carboidrato {
+                    color: $vermelho-carboidrato;
+                    margin-right: 87px;
+                }
+            }
+        }
+
+        &__remover {
+            cursor: pointer;
+        }
+    }
+
+    &__selecionar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+
+        &__input {
+            border-color: $marrom-segundo;
+            width: 150px
+        }
+
+        &__botao {
+            @include Botao($marrom-segundo, none);
+            padding: 5px;
+
+            &:hover {
+                cursor: pointer
+            }
+        }
+    }
+
+    &__adicionar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

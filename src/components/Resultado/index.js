@@ -4,7 +4,17 @@ import React, { useContext } from 'react'
 import styles from './Resultado.module.scss'
 
 export default function Resultado() {
-    const { genero, peso, altura, idade, atividade, objetivo } = useContext(UsuarioContext)
+    const { genero,
+        peso,
+        altura,
+        idade,
+        atividade,
+        objetivo,
+        proteina, setProteina,
+        carboidrato, setCarboidrato,
+        gordura, setGordura,
+        kcalNecessaria, setKcalNecessaria
+    } = useContext(UsuarioContext)
     function calculaBasal() {
         if (genero === 'Homem') { return 66 + (13.8 * peso) + (5 * (altura * 100) - (6, 8 * idade)) }
         else { return 655 + (9.6 * peso) + (1, 8 * (altura * 100)) - (4.7 * idade) }
@@ -24,15 +34,16 @@ export default function Resultado() {
     let kcalGastas = calculaKcalGastas()
 
     function calculaKcalNecessaria() {
-        if (objetivo === 'Perder Peso') { return kcalGastas - 200 }
-        else if (objetivo === 'Manter Peso') { return kcalGastas }
-        else { return kcalGastas + 200 }
+        if (objetivo === 'Perder Peso') { setKcalNecessaria(kcalGastas - 200) }
+        else if (objetivo === 'Manter Peso') { setKcalNecessaria(kcalGastas) }
+        else { setKcalNecessaria(kcalGastas + 200) }
     }
 
-    let kcalNecessaria = calculaKcalNecessaria()
-    let proteina = peso * 2
-    let gordura = peso
-    let carboidrato = peso * 5
+    calculaKcalNecessaria()
+
+    setProteina(peso * 2)
+    setCarboidrato(peso * 5)
+    setGordura(peso)
 
     return (
         <div className={styles.resultado}>

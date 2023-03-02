@@ -1,0 +1,19 @@
+.barraDeProgresso {
+    border: solid 1px black;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 112px;
+    height: 4px;
+    background-color: white;
+    margin-top: 40px;
+    position: relative;
+
+    &__progresso {
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        transition: 1s;
+    }
+}

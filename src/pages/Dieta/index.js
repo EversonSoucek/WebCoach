@@ -2,7 +2,6 @@ import React, { useContext } from 'react'
 import styles from './Dieta.module.scss'
 import BarraDeProgresso from 'components/BarraDeProgresso'
 import { UsuarioContext } from 'contexts/Usuario'
-import TituloSecao from 'components/TituloSecao'
 import Refeicao from 'components/Refeição'
 
 export default function Dieta() {

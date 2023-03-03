@@ -54,15 +54,9 @@ export default function Refeicao({ titulo }) {
                 </select>
                 <button className={styles.refeicao__selecionar__botao} onClick={() => {
                     for (let i = 0; i < comidas.length; i++) {
-                        for (let j = 0; j < refeicao.length; j++) {
-                            if (id === refeicao[j].nome) {
-                                return console.log('oi');
-                            }
-                        }
                         if (id === comidas[i].nome) {
                             setRefeicao(refeicao.concat(comidas[i]))
                             removeLista(comidas[i].nome)
-                            console.log(refeicao);
                         }
                     }
                     setMostrar(false)
@@ -72,7 +66,8 @@ export default function Refeicao({ titulo }) {
                 Novo<BsFillPlusCircleFill />
             </div>
         </div>
-
-
     )
 }
+
+
+

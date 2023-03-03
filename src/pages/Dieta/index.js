@@ -32,9 +32,9 @@ export default function Dieta() {
 				{kcalNecessaria}kcal
 			</div>
 			<Refeicao titulo='Café da manhã' />
-			<TituloSecao>Almoço</TituloSecao>
-			<TituloSecao>Lanche</TituloSecao>
-			<TituloSecao>Janta</TituloSecao>
+			<Refeicao titulo='Almoço'/>
+			<Refeicao titulo='Lanche'/>
+			<Refeicao titulo='Jantar'/>
 		</div>
 	)
 }

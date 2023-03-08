@@ -1,3 +1,4 @@
+import Footer from 'components/Footer'
 import Resultado from 'components/Resultado'
 import TituloSecao from 'components/TituloSecao'
 import UsuarioAltura from 'components/UsuarioForms/UsuarioAltura'
@@ -24,6 +25,7 @@ export default function Usuario() {
 				<TituloSecao>Resultado</TituloSecao>
 				<Resultado/>
 			</div>
+			<Footer/>
 		</div>
 	)
 }

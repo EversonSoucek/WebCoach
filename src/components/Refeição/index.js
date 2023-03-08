@@ -1,10 +1,9 @@
 import TituloSecao from 'components/TituloSecao'
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './Refeicao.module.scss'
 import { BsFillPlusCircleFill } from 'react-icons/bs'
 import { IoIosRemoveCircle } from 'react-icons/io'
 import comidas from 'json/comidas'
-import { UsuarioContext } from 'contexts/Usuario'
 
 export default function Refeicao() {
     const [mostrar, setMostrar] = useState(false)

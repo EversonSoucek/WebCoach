@@ -1,8 +1,13 @@
+@use '/src/styles/index.scss' as *;
+
 .rodape {
     margin-top: 100px;
     display: flex;
+    padding: 20px;
     flex-direction: column;
     align-items: center;
+    background-color: $verde-principal ;
+
     &__atributo {
         color: black;
         font-size: smaller;

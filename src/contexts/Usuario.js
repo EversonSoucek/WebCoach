@@ -14,6 +14,7 @@ export default function UsuarioProvider({ children }) {
     const [gordura, setGordura] = useState(0)
     const [kcalNecessaria, setKcalNecessaria] = useState(0)
 
+
     return (
         <UsuarioContext.Provider
             value={{
@@ -36,8 +37,7 @@ export default function UsuarioProvider({ children }) {
                 gordura,
                 setGordura,
                 kcalNecessaria,
-                setKcalNecessaria
-
+                setKcalNecessaria,
             }}>
             {children}
         </UsuarioContext.Provider>

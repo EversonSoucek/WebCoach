@@ -1,6 +1,6 @@
 import GraficoPizza from 'components/GraficoPizza'
 import { UsuarioContext } from 'contexts/Usuario'
-import React, { useContext } from 'react'
+import React, { useContext} from 'react'
 import styles from './Resultado.module.scss'
 
 export default function Resultado() {
@@ -15,6 +15,7 @@ export default function Resultado() {
         gordura, setGordura,
         kcalNecessaria, setKcalNecessaria
     } = useContext(UsuarioContext)
+    
     function calculaBasal() {
         if (genero === 'Homem') { return 66 + (13.8 * peso) + (5 * (altura * 100) - (6, 8 * idade)) }
         else { return 655 + (9.6 * peso) + (1, 8 * (altura * 100)) - (4.7 * idade) }
@@ -41,9 +42,11 @@ export default function Resultado() {
 
     calculaKcalNecessaria()
 
+
     setProteina(peso * 2)
     setCarboidrato(peso * 5)
     setGordura(peso)
+
 
     return (
         <div className={styles.resultado}>

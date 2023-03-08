@@ -6,23 +6,25 @@ import Refeicao from 'components/Refeição'
 
 export default function Dieta() {
 	const { proteina, carboidrato, gordura, kcalNecessaria } = useContext(UsuarioContext)
+	const { render, proteinaFalta, carboidratoFalta, gorduraFalta } = Refeicao()
+
 	return (
 		<div className={styles.dieta}>
 			<ul className={styles.dieta__macrosProgressao}>
 				<li className={styles.dieta__macrosProgressao__item}>
 					Proteína
 					<BarraDeProgresso cor='#3E0AF5' />
-					{proteina}g
+					{proteinaFalta.toFixed(1)}/{proteina}g
 				</li>
 				<li className={styles.dieta__macrosProgressao__item}>
 					Carboidrato
 					<BarraDeProgresso cor='#A80E00' />
-					{carboidrato}g
+					{carboidratoFalta.toFixed(1)}/{carboidrato}g
 				</li>
 				<li className={styles.dieta__macrosProgressao__item}>
 					Gordura
 					<BarraDeProgresso cor='#F5EF03' />
-					{gordura}g
+					{gorduraFalta.toFixed(1)}/{gordura}g
 				</li>
 			</ul>
 			<div className={styles.dieta__kcal}>
@@ -30,10 +32,7 @@ export default function Dieta() {
 				<BarraDeProgresso cor='black' />
 				{kcalNecessaria}kcal
 			</div>
-			<Refeicao titulo='Café da manhã' />
-			<Refeicao titulo='Almoço'/>
-			<Refeicao titulo='Lanche'/>
-			<Refeicao titulo='Jantar'/>
+			{render}
 		</div>
 	)
 }

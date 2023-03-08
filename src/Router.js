@@ -16,8 +16,8 @@ function AppRoutes() {
 				<CabecalhoPrincipal />
 				<Routes>
 					<Route path="/usuario" element={<Usuario />} />
-					<Route path="/dieta" element={<Dieta />} />
 					<Route path="/treino" element={<Treino />} />
+					<Route path="/dieta" element={<Dieta />} />
 				</Routes>
 			</UsuarioProvider>
 

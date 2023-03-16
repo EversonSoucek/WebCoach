@@ -7,6 +7,9 @@ import React from 'react'
 import styles from './Inicio.module.scss'
 
 export default function Inicio() {
+  document.title = 'WebCoach'
+
+
   return (
     <div className={styles.inicio}>
       <CabecalhoInicio />

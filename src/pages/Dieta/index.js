@@ -3,11 +3,12 @@ import styles from './Dieta.module.scss'
 import BarraDeProgresso from 'components/BarraDeProgresso'
 import { UsuarioContext } from 'contexts/Usuario'
 import Refeicao from 'components/Refeição'
-import Footer from 'components/Footer'
 
 export default function Dieta() {
 	const { proteina, carboidrato, gordura, kcalNecessaria } = useContext(UsuarioContext)
 	const { render, proteinaFalta, carboidratoFalta, gorduraFalta, kcalFalta } = Refeicao()
+
+	document.title = 'Dieta'
 
 	return (
 		<div className={styles.dieta}>

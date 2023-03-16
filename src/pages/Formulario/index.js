@@ -43,6 +43,9 @@ export default function Formulario() {
 			}
 		}
 	}
+
+	document.title = 'Formulario'
+
 	return (
 		<div className={styles.formulario}>
 			<CabecalhoInicio />

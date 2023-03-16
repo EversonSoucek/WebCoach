@@ -18,6 +18,8 @@ export default function Treino() {
 		console.log(nome);
 	}
 
+	document.title = 'Treino'
+
 	return (
 		<div className={styles.treino}>
 			<TituloSecao>Treino</TituloSecao>

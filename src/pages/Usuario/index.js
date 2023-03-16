@@ -10,6 +10,9 @@ import UsuarioPeso from 'components/UsuarioForms/UsuarioPeso'
 import React from 'react'
 
 export default function Usuario() {
+
+	document.title = 'Você'
+
 	return (
 		<div>
 			<div>

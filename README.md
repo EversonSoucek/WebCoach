@@ -1,6 +1,9 @@
 # WebCoach
 
-<img src="https://img.shields.io/badge/Status-Em%20progresso-yellow">
+<img src="https://img.shields.io/badge/Status-Completo-brightgreen"> 
+<img src='https://img.shields.io/github/languages/top/EversonSoucek/WebCoach?style=plastic'>
+<img src='https://img.shields.io/github/languages/code-size/EversonSoucek/WebCoach'>
+
 
 Web Coach é uma ferramenta feito em react para ajudar vc a manter e cuidar do seus treinos e dieta.
 
@@ -8,7 +11,7 @@ Este projeto está sendo seguido do protótipo <a href="https://www.figma.com/fi
 
 ## :hammer: funcionalidades do projeto
 
-Uma calculadora de macros para mostar o quanto de cada nutriente você precisa comer e uma forma de ir acompanhando o que vc já comeu no dia.
+Uma calculadora de macros para mostar o quanto de cada nutriente você precisa comer e uma forma de ir acompanhando o que você já comeu no dia.
 
 Organizar e acompanhar sua progressão nos treinos com a seção de treinos do site.
 
@@ -18,7 +21,9 @@ Adicionar seus própios pratos e alimentos para facilitar a contagem de sua diet
 
 - ⚛️ `React`
 - 📡 `React router dom`
+- ❗ `ReactIcons`
 - 👓 `Sass`
+- 📊 `Chartjs`
 
 ## :file_folder: Acesso ao projeto
 

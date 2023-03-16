@@ -1,0 +1,56 @@
+@use '/src/styles/index.scss' as *;
+
+.treino {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__selecionados {
+        display: flex;
+        flex-direction: column;
+    
+    &__resetar {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin-left: 1500px;
+        text-align: right;
+    }
+
+        &__container {
+            border-bottom: 1px solid black;
+            display: flex;
+            align-items: center;
+            margin-left: 250px; ;
+            text-align: center;
+            justify-content: space-around;
+            width: 80%; 
+
+
+            &__botao {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__botao {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__crud {
+        &__input {
+            border: solid 1px $marrom-segundo;
+            margin-right: 10px;
+            margin-top: 50px;
+            padding: 5px;
+
+        }
+
+        &__botao {
+            @include Botao($marrom-segundo, none, true)
+        }
+    }
+}

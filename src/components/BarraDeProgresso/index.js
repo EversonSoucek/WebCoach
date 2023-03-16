@@ -6,8 +6,10 @@ export default function BarraDeProgresso({ cor, valor, valorFalta }) {
     let porcentagem = 0
 
     useEffect(() => {
-        //porcentagem = ((valorFalta * 100) / valor)
-        porcentagem = 100
+        porcentagem = ((valorFalta * 100) / valor)
+        if (porcentagem > 100) {
+            porcentagem = 100
+        }
         toString(porcentagem)
         porcentagem += "%"
         setProgresso(porcentagem)

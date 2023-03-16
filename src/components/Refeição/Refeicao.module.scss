@@ -71,7 +71,27 @@
                 cursor: pointer
             }
         }
+
+        &__adicionar {
+            border-color: $marrom-segundo;
+        }
     }
+
+    &__quantidade {
+        display: flex;
+        justify-content: center;
+
+        &__input {
+            border: 1px solid $marrom-segundo;
+            padding: 10px 20px;
+            margin-right:10px ;
+        }
+
+        &__botao {
+            @include Botao($roxo-chamativo,none,true)
+        }
+    }
+
 
     &__adicionar {
         display: flex;

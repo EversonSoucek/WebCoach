@@ -7,7 +7,7 @@ import Footer from 'components/Footer'
 
 export default function Dieta() {
 	const { proteina, carboidrato, gordura, kcalNecessaria } = useContext(UsuarioContext)
-	const { render, proteinaFalta, carboidratoFalta, gorduraFalta } = Refeicao()
+	const { render, proteinaFalta, carboidratoFalta, gorduraFalta, kcalFalta } = Refeicao()
 
 	return (
 		<div className={styles.dieta}>
@@ -30,8 +30,8 @@ export default function Dieta() {
 			</ul>
 			<div className={styles.dieta__kcal}>
 				Kcal necessarios
-				<BarraDeProgresso cor='black' />
-				{kcalNecessaria}kcal
+				<BarraDeProgresso cor='black' valorFalta={kcalFalta} valor={kcalNecessaria} />
+				{kcalNecessaria.toFixed(1)}kcal
 			</div>
 			{render}
 		</div>
